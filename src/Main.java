@@ -9,12 +9,13 @@ public class Main {
         Truck truck = new Truck("truck1",6);
         Truck truck2 = new Truck("truck2",8);
 
-        car.check(car);
-        car2.check(car2);
-        bicycle.check(bicycle);
-        bicycle2.check(bicycle2);
-        truck.check(truck);
-        truck2.check(truck2);
+        ServiceStation.check(car);
+        ServiceStation.check(car2);
+        ServiceStation.check(bicycle);
+        ServiceStation.check(bicycle2);
+        ServiceStation.check(truck);
+        ServiceStation.check(truck2);
+
 
 
 

@@ -1,6 +1,6 @@
-public class Transport implements ServiceStation{
-    private String modelName;
-    private int wheelsCount;
+public class Transport{
+    private final String modelName;
+    private final int wheelsCount;
 
     public Transport(String modelName, int wheelsCount) {
         this.modelName = modelName;
