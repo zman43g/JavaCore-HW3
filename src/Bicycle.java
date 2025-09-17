@@ -1,30 +1,15 @@
-public class Bicycle {
-
-    private String modelName;
-    private int wheelsCount;
+public class Bicycle extends Transport implements Serviceable {
 
     public Bicycle(String modelName, int wheelsCount) {
-    this.modelName = modelName;
-    this.wheelsCount = wheelsCount;
+        super(modelName, wheelsCount);
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
+    @Override
+    public void check() {
+        System.out.println("Обслуживаем велосипед " + this.getModelName());
+        for (int i = 0; i < this.getWheelsCount(); i++) {
+            this.updateTyre();
+        }
 
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
-    }
-
-    public void setWheelsCount(int wheelsCount) {
-        this.wheelsCount = wheelsCount;
-    }
-
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
-
-    public String getModelName() {
-        return modelName;
     }
 }
