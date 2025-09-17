@@ -27,18 +27,4 @@ public class Transport {
         System.out.println("Проверяем прицеп");
     }
 
-    /*@Override
-    public void check() {
-        System.out.println("Обслуживаем " + this.getModelName());
-        for (int i = 0; i < this.getWheelsCount(); i++) {
-            this.updateTyre();
-        }
-
-        if (this.getClass() == Car.class || this.getClass() == Truck.class) {
-            this.checkEngine();
-        }
-        if (this.getClass() == Truck.class) {
-            this.checkTrailer();
-        }
-    }*/
 }
